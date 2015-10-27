@@ -13,8 +13,6 @@ public class Archivos {
 		System.out.println("Ruta \n" + dir.getAbsolutePath());
 		try {
 			System.out.println("dir.getCanonicalPath() : " + dir.getCanonicalPath());
-			System.out.println("dir.getParent() 	   : " + dir.getParent());
-			System.out.println("dir.getPath()   	   : " + dir.getPath());			
 		} catch (IOException e) {			
 			e.printStackTrace();
 		}
