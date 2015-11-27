@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<project name="Mi_Proyecto" default="todo">
+
+   <target name="todo" depends="empaqueta">
+   </target>
+
+   <target name="empaqueta" depends="compila">
+   	 <!-- <mkdir dir="../../bin/ant/jar"/> no es necesario crea una carpeta-->	
+      <jar destfile="../../bin/ant/jar/fichero.jar" includes="../bin/ant/**/*.class"/>
+   </target>
+
+   <target name="compila">
+      <javac srcdir="." includeantruntime="false" destdir="../../bin/ant"/>
+   </target>
+
+  <!-- <target name="documenta">      
+   <mkdir dir="../../bin/ant/javadoc"/>   
+   	<javadoc sourcepath="." packagenames="*"/> 
+   </target> -->
+
+</project>
