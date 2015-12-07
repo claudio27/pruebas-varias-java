@@ -15,6 +15,7 @@ public class Propiedades {
 	public static void main(String[] args) {
 	
 		System.out.println(Propiedades.getParametros("variable2"));
+		System.out.println("Propiedades.main()");
 	
 	}
 
