@@ -14,9 +14,13 @@ public class Excepciones {
 
 
 		Excepciones ex = new Excepciones();
+		try{
 		ex.callDivide();
 		ex.openFile();
+		}catch (BadNumberException e) {
 
+			System.err.println("Exception catching " + e.getMessage());
+		}
 	}
 
 	public int divide(int numberToDivide, int numberToDivideBy)	throws BadNumberException {
@@ -26,7 +30,7 @@ public class Excepciones {
 		return numberToDivide / numberToDivideBy;
 	}
 
-	public void callDivide(){
+	public void callDivide()throws BadNumberException {
 
 		int result = 0;
 		try {
@@ -34,7 +38,10 @@ public class Excepciones {
 			System.out.println("Se imprime si todo va bien");
 		} catch (BadNumberException e) {
 			System.out.println("No se puede dividir por cero\t" + e);
-			e.printStackTrace();
+//			e.printStackTrace();
+			/* si no lanza la excepcion y se queda aca, se ejecuta la funcion que sigue cuando se llama a callDivide() */
+			throw new BadNumberException("Cannot divide by 0 x2"); 
+			
 		}	
 		System.out.println(result);
 
