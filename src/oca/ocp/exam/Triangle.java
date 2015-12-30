@@ -2,7 +2,8 @@ package oca.ocp.exam;
 
 public class Triangle {
 
-	class MyResource1 implements AutoCloseable { 
+	
+/*	class MyResource1 implements AutoCloseable { 
 		public void autoClose() { System.out.print("1 "); } // A1
 		}
 		class MyResource2 implements AutoCloseable { 
@@ -18,7 +19,7 @@ public class Triangle {
 		finally {
 			System.out.print("f ");
 		}
-	}
+	}*/
 	
 	/**
 	 * What is the result? 
