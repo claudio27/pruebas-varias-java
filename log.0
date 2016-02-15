@@ -1,0 +1,24 @@
+Jan 20, 2016 10:02:42 PM  
+STDOUT: Hello world!
+Jan 20, 2016 10:02:42 PM runtimelogin.Main main
+Información: This is a test log message
+Jan 20, 2016 10:02:42 PM  
+STDERR: java.lang.RuntimeException: Test
+Jan 20, 2016 10:02:42 PM  
+STDERR: 	at runtimelogin.Main.main(Main.java:51)
+Jan 20, 2016 10:39:48 PM  
+STDOUT: Hello world!
+Jan 20, 2016 10:39:48 PM runtimelogin.Main main
+Información: This is a test log message
+Jan 20, 2016 10:39:48 PM  
+STDERR: java.lang.RuntimeException: Test
+Jan 20, 2016 10:39:48 PM  
+STDERR: 	at runtimelogin.Main.main(Main.java:51)
+Jan 20, 2016 10:39:54 PM  
+STDOUT: Hello world!
+Jan 20, 2016 10:39:54 PM runtimelogin.Main main
+Información: This is a test log message
+Jan 20, 2016 10:39:54 PM  
+STDERR: java.lang.RuntimeException: Test
+Jan 20, 2016 10:39:54 PM  
+STDERR: 	at runtimelogin.Main.main(Main.java:51)
