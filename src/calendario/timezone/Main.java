@@ -20,6 +20,8 @@ public class Main {
 		Main ob = new Main();
 		ob.hoy.setTime(ob.trialTime);
 		
+		
+		
 		System.out.println(ob.hoy);
 		System.out.println(ob.hoy.getTimeZone());
 		System.out.println(ob.hoy.getFirstDayOfWeek());
