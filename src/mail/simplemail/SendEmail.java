@@ -18,16 +18,16 @@ public class SendEmail
       String from = "web@gmail.com";
 
       // Assuming you are sending email from localhost
-      String host = "correo2010.bice.local"; // correo2010.bice.local
+      String host = "srvboqa"; // correo2010.bice.local, srvboqa
 
       // Get system properties
       Properties properties = System.getProperties();
 
       // Setup mail server
       properties.setProperty("mail.smtp.host", host);
-      properties.setProperty("mail.smtp.port", "443");
-//      properties.setProperty("mail.user", "myuser");
-//      properties.setProperty("mail.password", "mypwd");
+//      properties.setProperty("mail.smtp.port", "443");
+      properties.setProperty("mail.user", "auditor.tasa ");
+      properties.setProperty("mail.password", "santiago");
 
       // Get the default Session object.
       Session session = Session.getDefaultInstance(properties);
