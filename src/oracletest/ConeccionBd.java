@@ -27,26 +27,44 @@ import java.sql.*;
  * */
 
 public class ConeccionBd {
+	
+	private static final String driverMachine = "jdbc:oracle:thin:@10.110.1.54:1522:orawpor";
+	private static final String userId = "CAP_ADMIN";
+	private static final String password = "CAP_ADMIN";
 
 	public static void main(String[] args) throws SQLException {
 		
 		DriverManager.registerDriver (new oracle.jdbc.driver.OracleDriver());
-	    Connection conn = DriverManager.getConnection
-	          ("jdbc:oracle:thin:@10.110.1.54:1522:orawpor", "CAP_ADMIN", "CAP_ADMIN");
-	         // driver@machineName:port:SID           ,  userid,  password
-	    Statement stmt = conn.createStatement();
-	    ResultSet rset = 
-//	              stmt.executeQuery("select BANNER from SYS.V_$VERSION");
-	    	 stmt.executeQuery("select * from tbl_det_deposito");
-//	    	stmt.executeQuery("{call CAP_SP_CON_MANDATO }");
-	    	
-	    while (rset.next())
-	         System.out.println (rset.getString("num_folio") + " " 
-	        		 + rset.getString("rut1"));   // Print col 1
-	    stmt.close();
+		
+		// driver@machineName:port:SID,  userid,  password
+	    Connection conn = DriverManager.getConnection(driverMachine, userId, password);
 	    
+	    
+	    consultaBasica(conn);
 
 	  }
+	
+	public static void consultaBasica(Connection conn) throws SQLException {
+
+		Statement stmt = conn.createStatement();
+		ResultSet rset =
+		// stmt.executeQuery("select BANNER from SYS.V_$VERSION");
+		stmt.executeQuery("select * from tbl_det_deposito");
+		// stmt.executeQuery("{call CAP_SP_CON_MANDATO }");
+
+		while (rset.next())
+			System.out.println(rset.getString("num_folio") + " "
+					+ rset.getString("rut1")); // Print col 1
+		stmt.close();
+
+	}
+	
+	public static void consultaSp(Connection conn){
+		
+		
+	
+	
+	}
 
 	
 

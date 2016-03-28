@@ -20,7 +20,9 @@ public class Main {
 		} else {
 			System.out.println("false");
 		}
-
+		
+		String s2 = "123456789"; ;
+		System.out.println(s2.replace("-", ""));
 	}
 
 }

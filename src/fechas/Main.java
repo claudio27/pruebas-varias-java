@@ -1,11 +1,12 @@
 package fechas;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Main {
 
-	public static void main(String []aaa){
+	public static void main2(String []aaa){
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		
@@ -73,4 +74,57 @@ public class Main {
 			return concatenado;    			
 		}
 	}
+	
+	
+	public static void main(String []args){
+		
+		Main.comparandoFechasDistintas();
+	}
+	
+	
+	/**
+	 * 
+	 * Ejemplo de comparación de fechas.
+	 * 
+	 * Compara fechas por medio de los objetos Date y String
+	 * 
+	 */
+	public static void comparandoFechasDistintas(){
+		
+
+		Date d1 = new Date();
+		Date d2 = new Date();
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		
+		Calendar cal = Calendar.getInstance();
+		cal.set(2016, 02, 28);
+		
+		d2 = cal.getTime();
+		
+		
+		// Comparando fechas, no van a ser iguales nunca porque compara el numero de milisegundos
+		System.out.println(d1);
+		System.out.println(d2);
+		System.out.println(d1.getTime()); // Numero de milisegundos desde el 1/01/1970 00:00
+		System.out.println(d2.getTime()); 		
+		System.out.println((d1.getTime() == d2.getTime())? "iguales" : "diferentes");
+		System.out.println((d1.equals(d2) )? "iguales" : "diferentes");
+		
+		
+		// Transformarlas a String
+		
+		String f1 = sdf.format(d1);
+		String f2 = sdf.format(d2);
+		
+		System.out.println(f1 + " ----- " + f2);
+		// Comparando distintos tipos, equals(Object), compara objetos
+		System.out.println((f1.equals(d2) )? "iguales" : "diferentes");
+		
+		System.out.println((f1.equals(f2) )? "iguales" : "diferentes");
+		
+		
+	}
+	
+	
 }
