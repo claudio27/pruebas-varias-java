@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+
 public class Main {
 
 	public static void main2(String []aaa){
@@ -78,7 +79,10 @@ public class Main {
 	
 	public static void main(String []args){
 		
-		Main.comparandoFechasDistintas();
+	//	Main.comparandoFechasDistintas();
+		Main.fechaHoy();
+//		Date d = new Date();
+//		System.out.println(d);
 	}
 	
 	
@@ -125,6 +129,32 @@ public class Main {
 		
 		
 	}
+	
+	
+	public static void fechaHoy(){
+//		FormatUtil.formatearFecha( objetoConsulta.getFecTomaDAP(), "yyyyMMdd")
+		
+		Date date = new Date();
+//		date.setHours(0);
+//		date.setMinutes(0);
+//		date.setSeconds(0);
+		
+		System.out.println(date);
+		try{
+			
+			System.out.println(Main.formatearFecha(date, "yyyyMMdd"));
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+	
+    public static String formatearFecha(Date fechaIn, String formatoOut) {
+        SimpleDateFormat df1 = new java.text.SimpleDateFormat(formatoOut);
+        return df1.format(fechaIn);
+	}
+
+	
 	
 	
 }
