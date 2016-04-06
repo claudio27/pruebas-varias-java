@@ -1,0 +1,9 @@
+2016-04-06 18:45:07 DEBUG class:22 - This is debug : cl
+2016-04-06 18:45:07 INFO  class:26 - This is info : cl
+2016-04-06 18:45:07 WARN  class:29 - This is warn : cl
+2016-04-06 18:45:07 ERROR class:30 - This is error : cl
+2016-04-06 18:45:07 FATAL class:31 - This is fatal : cl
+2016-04-06 18:45:07 ERROR class:38 - Un error : 
+java.lang.RuntimeException: Test
+	at com.cla.RegistroMain.runMe(RegistroMain.java:36)
+	at com.cla.RegistroMain.main(RegistroMain.java:15)
