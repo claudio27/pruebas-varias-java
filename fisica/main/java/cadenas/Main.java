@@ -2,12 +2,23 @@ package cadenas;
 
 public class Main {
 
-	/**
-	 * @param args
-	 */
+	private boolean var;
+	
+	public boolean isVar() {
+		return var;
+	}
+	public void setVar(boolean var) {
+		this.var = var;
+	}
+	
 	public static void main(String[] args) {
 
 		String a = "3123456789";
+		
+		Main n = new Main();
+		
+		
+		System.out.println(n.isVar());
 		
 		if(true){
 			System.out.println(a.substring(1, 2));
