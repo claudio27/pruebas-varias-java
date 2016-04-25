@@ -8,6 +8,7 @@ public class PruebasStr {
 	public static void main(String[] args) {
 
 		String str = "Fijo - BIA";
+		@SuppressWarnings("unused")
 		String str2 = " INFO  - cl.bice.inversiones.view.bean.funciones.ejecutivo.EliminaMarcaCmaBeans - class cl.bice.inversiones.view.bean.funciones.ejecutivo.EliminaMarcaCmaBeans  INFO  - cl.bice.inversiones.view.bean.funciones.ejecutivo.EliminaMarcaCmaBeans - class cl.bice.inversiones.view.bean.funciones.ejecutivo.EliminaMarcaCmaBeans";		
 		
 //		try{

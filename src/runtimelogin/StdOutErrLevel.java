@@ -11,7 +11,17 @@ import java.util.logging.Level;
  */
 public class StdOutErrLevel extends Level {
     
+	
+	/**
+	 * The serializable class StdOutErrLevel does not declare a static final serialVersionUID field of type long
+	 * */
+	
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
      * private constructor
      * @param name name used in toString
      * @param value integer value, should correspond to something reasonable in default Level class

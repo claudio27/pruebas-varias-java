@@ -94,7 +94,8 @@ public class HelloWorldServer
         while ( true )
         {
             Socket socket = serverSocket.accept();
-            HelloWorldServer hw = new HelloWorldServer( socket, nextNum++ );
+            @SuppressWarnings("unused")
+			HelloWorldServer hw = new HelloWorldServer( socket, nextNum++ );
         }
     }
 }

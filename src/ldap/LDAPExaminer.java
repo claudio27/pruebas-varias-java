@@ -18,6 +18,7 @@ public class LDAPExaminer {
 		ldapExaminer.printUserBasicAttributes("<strong>cserrano</strong>", ldapExaminer.getLdapContext());
 	}
 
+	@SuppressWarnings("unchecked")
 	public LdapContext getLdapContext(){
 		LdapContext ctx = null;
 		try{
@@ -44,6 +45,8 @@ public class LDAPExaminer {
 		return ctx;
 	}
 
+	
+	@SuppressWarnings("unchecked")
 	private void printUserBasicAttributes(String username, LdapContext ctx) {
 		try {
 

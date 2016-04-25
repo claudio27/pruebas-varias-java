@@ -25,6 +25,7 @@ public class Main {
 
 	// preserve old stdout/stderr streams in case they might be useful
 	PrintStream stdout = System.out;
+	@SuppressWarnings("unused")
 	PrintStream stderr = System.err;
 	
 	// now rebind stdout/stderr to logger

@@ -21,6 +21,7 @@ public class Main {
 		String s = "Claudia Natalia Cornejo Rodriguez";
 		String s2 = "Sandra Figueroa";
 		
+		@SuppressWarnings("unused")
 		String s1s[];
 		String s2s[];
 		

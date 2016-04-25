@@ -9,6 +9,7 @@ public class Encoding implements Interface{
 	 */
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("unused")
 		String s1 = "a";
 		Encoding e = new Encoding();
 		
