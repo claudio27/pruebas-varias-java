@@ -7,8 +7,9 @@ public class SimpleHelloWorld {
 	 */
 	public static void main(String[] args) {
 
-                System.out.println("Hola mudddddo");
-
+                System.out.println(new SimpleHelloWorld().laClase());
 	}
+	
+	public String laClase(){ return this.getClass().toString();}
 
 }
