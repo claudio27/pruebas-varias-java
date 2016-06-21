@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Principal {
+public class EjemploListas {
 	
 	List<String> lista1 ;
 	
@@ -20,9 +20,9 @@ public class Principal {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void init() {
 		
-		Principal p = new Principal();
+		EjemploListas p = new EjemploListas();
 		List<String> list = null;
 		int b = -1;
 		

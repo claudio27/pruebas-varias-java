@@ -9,7 +9,7 @@ public class MainHash {
 	Hashtable<String, String> tabla = new Hashtable<String, String>();
 	
 	
-	public static void main(String[] ars){
+	public static void init(){
 		
 		MainHash obj = new MainHash();
 		obj.crearData();

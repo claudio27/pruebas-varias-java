@@ -10,7 +10,7 @@ public class Excepciones {
 	 * @param args
 	 * @throws BadNumberException 
 	 */
-	public static void main(String[] args){
+	public static void init(){
 
 
 		Excepciones ex = new Excepciones();

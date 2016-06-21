@@ -8,7 +8,7 @@ import javax.mail.internet.*;
 
 public class SendEmail
 {
-   public static void main(String [] args)
+   public static void init()
    {    
       // Recipient's email ID needs to be mentioned.
       String to = "cserrano_ex@bice.cl";

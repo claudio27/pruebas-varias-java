@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 public class Window {
 
 
-	public static void main(String[] args) {
+	public static void init() {
 
 		JFrame frame = new JFrame();
 		JLabel hi = new JLabel("Hola");

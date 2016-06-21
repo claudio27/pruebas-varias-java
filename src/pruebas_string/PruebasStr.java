@@ -5,7 +5,7 @@ public class PruebasStr {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public void init() {
 
 		String str = "Fijo - BIA";
 		@SuppressWarnings("unused")

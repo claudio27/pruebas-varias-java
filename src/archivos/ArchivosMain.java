@@ -9,7 +9,7 @@ public class ArchivosMain {
 	
 
 
-	public static void main(String []args){
+	public static void init(){
 
 		BasicasArchivo ba = new BasicasArchivo();
 //		ArchivosMain.imprimeRutaEjecucion();

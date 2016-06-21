@@ -15,7 +15,7 @@ public class Main {
       
 //      hoy.setTime(trialTime);
 	
-	public static void main(String[] args) {
+	public static void init() {
 		
 		Main ob = new Main();
 		ob.hoy.setTime(ob.trialTime);
@@ -26,8 +26,6 @@ public class Main {
 		System.out.println(ob.hoy.getTimeZone());
 		System.out.println(ob.hoy.getFirstDayOfWeek());
 		System.out.println(ob.hoy.getTime());
-		
-		
 
 	}
 	

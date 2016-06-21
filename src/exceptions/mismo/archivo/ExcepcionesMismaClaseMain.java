@@ -6,7 +6,7 @@ public class ExcepcionesMismaClaseMain {
 	
 	
 	
-	public static void main(String[] a) {
+	public static void init() {
 
 		ExcepcionesMismaClaseMain ex = new ExcepcionesMismaClaseMain();
 	

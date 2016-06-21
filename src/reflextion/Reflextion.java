@@ -1,12 +1,12 @@
 package reflextion;
 
-public class Main {
+public class Reflextion {
 
-	public static void main(String[] args){
+	public void init(){
 		Perro p = new Perro("nombre",12,"comida");
 		System.out.println(p);
 		
-		Main obj = new Main();
+		Reflextion obj = new Reflextion();
 		obj.whats();
 	}
 	

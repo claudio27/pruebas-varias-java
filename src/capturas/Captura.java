@@ -13,7 +13,7 @@ public class Captura {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void init() {
 		try
 		{
 			System.out.println("[ Captura iniciada ]");

@@ -32,7 +32,7 @@ public class ConeccionBd {
 	private static final String userId = "CAP_ADMIN";
 	private static final String password = "CAP_ADMIN";
 
-	public static void main(String[] args) throws SQLException {
+	public void init() throws SQLException {
 		
 		DriverManager.registerDriver (new oracle.jdbc.driver.OracleDriver());
 		

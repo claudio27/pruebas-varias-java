@@ -1,14 +1,14 @@
-package primer;
+package propiedades.sistema;
 
-public class Main {
+public class PropiedadesSistema {
 
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public  void init() {
 		// TODO Auto-generated method stub
 		
-		Main ob = new Main();
+		PropiedadesSistema ob = new PropiedadesSistema();
 		ob.printProps();
 		ob.printLibrary("java.library.path");
 		ob.printReflextion();
@@ -46,10 +46,10 @@ public class Main {
 	}
 	
 	public void printReflextion(){
-        System.out.println(Main.class.getName());
+        System.out.println(PropiedadesSistema.class.getName());
         System.out.println(int[].class.getName()); 
-        System.out.println(Main[].class.getName());      
-        System.out.println(Main.class.getPackage()); 
+        System.out.println(PropiedadesSistema[].class.getName());      
+        System.out.println(PropiedadesSistema.class.getPackage()); 
 	}
 	
 	

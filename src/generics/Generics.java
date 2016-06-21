@@ -5,12 +5,12 @@ import java.util.Iterator;
 import java.util.List;
 import javax.faces.model.SelectItem;
 
-public class Main {
+public class Generics {
 	public List<SelectItem> lista2 = new ArrayList<SelectItem>();
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void init() {
 
 		List<SelectItem> lista = new ArrayList<SelectItem>();
 		
@@ -46,7 +46,7 @@ public class Main {
 		
 		System.out.println("**** ***** ******** test");
 		String[] test = {"10","45","3","4","0","2"};
-		Main obj = new Main();
+		Generics obj = new Generics();
 		obj.creaValores();
 		System.out.println(obj.getValoresFiltro(test));
 		

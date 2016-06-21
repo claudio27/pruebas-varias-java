@@ -7,7 +7,7 @@ public class DecimalMain {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void init() {
 
 		double a = 1.23546451164654;
 		DecimalFormat df = new DecimalFormat("#.##");

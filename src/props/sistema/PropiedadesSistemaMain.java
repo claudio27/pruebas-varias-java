@@ -3,7 +3,7 @@ package props.sistema;
 
 public class PropiedadesSistemaMain {
 
-	public static void main(String[] args) {
+	public void init() {
 		
 		String[] props = System.getProperties().toString().split(",");
 		

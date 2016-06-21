@@ -1,6 +1,6 @@
 package cadenas;
 
-public class Main {
+public class Cadenas {
 
 	private boolean var;
 	
@@ -15,7 +15,7 @@ public class Main {
 
 		String a = "3123456789";
 		
-		Main n = new Main();
+		Cadenas n = new Cadenas();
 		
 		
 		System.out.println(n.isVar());

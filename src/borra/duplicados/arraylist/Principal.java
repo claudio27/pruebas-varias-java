@@ -10,7 +10,7 @@ import java.util.Set;
 public class Principal {
 
 	
-	public static void main(String[] args) {
+	public static void init() {
 		
 		List<Persona> list = new ArrayList<Persona>();
 		

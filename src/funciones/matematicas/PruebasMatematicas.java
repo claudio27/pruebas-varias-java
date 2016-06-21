@@ -5,7 +5,7 @@ public class PruebasMatematicas {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void init() {
 
 		
 		// funcion Double.compare(Double), fijarse que es el Wrapper de double

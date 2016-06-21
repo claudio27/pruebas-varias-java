@@ -5,7 +5,7 @@ public class Main {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void init() {
 
 		Persona p1 = new Persona();
 		

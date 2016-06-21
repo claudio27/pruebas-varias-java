@@ -4,7 +4,7 @@ public class ReturnMain {
 
 	String a = "B";
 	
-	public static void main(String[] args){
+	public void init(){
 		
 		ReturnMain obj = new ReturnMain();
 		obj.metodo1();

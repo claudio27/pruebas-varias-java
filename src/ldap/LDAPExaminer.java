@@ -12,7 +12,7 @@ import javax.naming.ldap.LdapContext;
 
 public class LDAPExaminer {
 
-	public static void main(String[] args) {
+	public static void init() {
 		LDAPExaminer ldapExaminer = new LDAPExaminer();
 		//NOTE: replace theUserName below with the Active Directory/LDAP user whose attribites you want printed.
 		ldapExaminer.printUserBasicAttributes("<strong>cserrano</strong>", ldapExaminer.getLdapContext());

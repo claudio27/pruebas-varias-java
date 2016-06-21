@@ -5,7 +5,7 @@ public class ProgresoMain {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void init() {
 		
 		BarraProgresoTexto btext = new BarraProgresoTexto();
 		btext.animacionProgreso();

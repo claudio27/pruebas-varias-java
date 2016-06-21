@@ -7,7 +7,7 @@ public class Encoding implements Interface{
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void init() {
 		
 		@SuppressWarnings("unused")
 		String s1 = "a";

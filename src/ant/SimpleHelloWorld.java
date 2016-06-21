@@ -5,7 +5,7 @@ public class SimpleHelloWorld {
 	/**
 	 * @param args esta es una prueba de javadoc
 	 */
-	public static void main(String[] args) {
+	public static void init() {
 
                 System.out.println(new SimpleHelloWorld().laClase());
 	}

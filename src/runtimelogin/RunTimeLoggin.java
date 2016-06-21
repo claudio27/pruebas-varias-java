@@ -10,9 +10,9 @@ import java.util.logging.SimpleFormatter;
  *
  * @author nstephen
  */
-public class Main {
+public class RunTimeLoggin {
 
-    public static void main(String[] args) throws Exception {
+    public void init() throws Exception {
 
         // initialize logging to go to rolling log file
         LogManager logManager = LogManager.getLogManager();

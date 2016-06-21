@@ -2,7 +2,7 @@ package recortando.cadenas;
 
 public class RecortandoMain {
 
-	public static void main(String[] args) {
+	public void init() {
 
 		String a = "171542535";
 		

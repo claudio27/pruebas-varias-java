@@ -4,12 +4,12 @@ package inyecciondependencias.coninyeccion;
  * http://codecriticon.com/inyeccion-de-dependencias/
  * 
  * */
-public class Start {
+public class ConInyeccionObj {
 
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void init() {
 	    ObjetoCerraduraLlave llave =new ObjetoCerraduraLlave();
 	      ObjetoPuerta puerta = new ObjetoPuerta(llave);
 	      puerta.usar();

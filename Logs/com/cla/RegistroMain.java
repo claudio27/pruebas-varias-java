@@ -20,7 +20,7 @@ public class RegistroMain {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void init() {
 		
 		RegistroMain obj = new RegistroMain();
 		obj.runMe("cl");

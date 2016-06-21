@@ -5,7 +5,7 @@ public class MainPrinciple {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void init() {
 		
 		CalculadoraSueldoEmpleado calculoBasico = new CalculadoraBasicaSueldoEmpleado();
 		CalculadoraSueldoEmpleado calculoExtra = new CalculadoraPagoExtraSueldoEmpleado();

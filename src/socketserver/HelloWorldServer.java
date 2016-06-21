@@ -80,7 +80,7 @@ public class HelloWorldServer
         }
     }
     
-    public static void main( String[] args )
+    public static void init( String[] args ) // Pasarlos desde la linea de comandos
         throws Exception
     {
         int port = 9000;

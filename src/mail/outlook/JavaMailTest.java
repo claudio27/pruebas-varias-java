@@ -12,7 +12,8 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 public class JavaMailTest {
-    public static void main(String[] args) {
+	
+    public static void init() {
 //        String host="host";  
 //    	String host="correo2010.bice.local";
     	String host="10.101.1.150";

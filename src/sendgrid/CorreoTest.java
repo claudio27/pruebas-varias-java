@@ -7,7 +7,7 @@ import com.sendgrid.*;
 public class CorreoTest {
 
 	
-	public static void main(String[] args) {
+	public void init() {
 
 /*		if(null == ""){
 			System.out.println("son inguales");
