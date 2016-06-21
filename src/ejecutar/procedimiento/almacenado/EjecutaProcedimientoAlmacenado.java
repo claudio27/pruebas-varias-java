@@ -16,7 +16,7 @@ public class EjecutaProcedimientoAlmacenado {
 	private static final String DB_USER = "CAP_ADMIN";
 	private static final String DB_PASSWORD = "CAP_ADMIN";
 
-	public static void main(String[] argv) {
+	public static void init() {
 
 		try {
 

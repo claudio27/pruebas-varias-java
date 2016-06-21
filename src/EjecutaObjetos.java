@@ -1,4 +1,4 @@
-import inyecciondependencias.coninyeccion.ConInyeccionObj;
+import ejecutar.procedimiento.almacenado.EjecutaProcedimientoAlmacenado;
 
 
 public class EjecutaObjetos {
@@ -9,7 +9,10 @@ public class EjecutaObjetos {
 	public static void main(String[] args)
 	{
 	
-		ConInyeccionObj.init();
+//		ConInyeccionObj.init();+
+		System.out.println("Main exec");
+		EjecutaProcedimientoAlmacenado.init();
+		
 	}
 
 
