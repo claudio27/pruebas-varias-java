@@ -1,5 +1,4 @@
-import ejecutar.procedimiento.almacenado.EjecutaProcedimientoAlmacenado;
-
+import hilos.AdministradorDeHilos;
 
 public class EjecutaObjetos {
 
@@ -8,16 +7,14 @@ public class EjecutaObjetos {
 	 */
 	public static void main(String[] args)
 	{
-	
-//		ConInyeccionObj.init();+
 		System.out.println("Main exec");
-		EjecutaProcedimientoAlmacenado.init();
+		AdministradorDeHilos.init();
 		
 	}
 
 
 	
-	
+	@Deprecated
 	public static String eliminaCerosRut(String rutString) {
 		String resultado = "";
 		String dv = "";
