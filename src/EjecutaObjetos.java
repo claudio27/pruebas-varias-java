@@ -1,4 +1,7 @@
-import hilos.AdministradorDeHilos;
+import java.io.IOException;
+import java.sql.SQLException;
+
+import blobs.oracle.AlmacenaBlob;
 
 public class EjecutaObjetos {
 
@@ -7,8 +10,33 @@ public class EjecutaObjetos {
 	 */
 	public static void main(String[] args)
 	{
-		System.out.println("Main exec");
-		AdministradorDeHilos.init();
+//		System.out.println("Main exec");
+//		AdministradorDeHilos.init();
+		
+//		for(int a = 0; a < 3; a++){
+//			for(int i = 0; i < 5; i++){
+//				for(int j = 0 ; j < 5; j++){
+//					if(i == 3 ){
+//						System.out.println("fin ...");
+//						break;
+//					}
+//					System.out.println("i : "+ i + ", j : " + j + ", a : " + a);
+//				}
+//			}			
+//		}
+//		System.out.println("Despues del break");
+		AlmacenaBlob almacen = new AlmacenaBlob();
+		
+		
+		try {
+//			almacen.guardaArchivoBd();
+			almacen.recuperaArchivoBD();
+		} catch (SQLException e) {		
+			e.printStackTrace();
+		} catch (IOException e) {		
+			e.printStackTrace();
+		}
+		
 		
 	}
 

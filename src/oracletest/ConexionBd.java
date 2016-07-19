@@ -26,18 +26,34 @@ import java.sql.*;
  *   
  * */
 
-public class ConeccionBd {
+public class ConexionBd {
 	
 	private static final String driverMachine = "jdbc:oracle:thin:@10.110.1.54:1522:orawpor";
 	private static final String userId = "CAP_ADMIN";
 	private static final String password = "CAP_ADMIN";
+	private Connection conn = null;
+	
+	public ConexionBd() {
+		try {
+			DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
 
+			// driver@machineName:port:SID, userid, password
+			conn = DriverManager.getConnection(driverMachine, userId, password);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Usar en ambiente estatico, para crear la conexion y realizar una consulta basica.
+	 * @throws SQLException
+	 */
 	public void init() throws SQLException {
 		
 		DriverManager.registerDriver (new oracle.jdbc.driver.OracleDriver());
 		
 		// driver@machineName:port:SID,  userid,  password
-	    Connection conn = DriverManager.getConnection(driverMachine, userId, password);
+	     conn = DriverManager.getConnection(driverMachine, userId, password);
 	    
 	    
 	    consultaBasica(conn);
@@ -59,11 +75,8 @@ public class ConeccionBd {
 
 	}
 	
-	public static void consultaSp(Connection conn){
-		
-		
-	
-	
+	public Connection getConexion(){
+		return conn;
 	}
 
 	
