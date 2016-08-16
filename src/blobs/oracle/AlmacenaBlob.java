@@ -2,7 +2,6 @@ package blobs.oracle;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,9 +27,6 @@ public class AlmacenaBlob {
 //	    String sql = "INSERT INTO pictures (name, description, image) VALUES (?, ?, ?)";
 		String sql = "insert into a_pruebas_archivos (id, nombre_archivo, tipo, archivo)"
 				+ " values(?, ?, ?, ?)";
-		
-	    //TODO consultar cuanto pesa el archivo
-	    //TODO consultar el tipo mime o la extension
 		
 	    PreparedStatement stmt = conexion.prepareStatement(sql);
 	    stmt.setInt(1, 1);
